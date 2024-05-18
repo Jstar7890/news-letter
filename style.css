@@ -1,0 +1,258 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.right-section {
+  height: 40vh; /* Sets the height to 40% of the viewport height */
+  width: 100%; /* Ensures it covers the full width */
+  background-image: url(assets/images/illustration-sign-up-mobile.svg);
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-repeat: no-repeat;
+  background-position: center; /* Centers the background image */
+}
+
+main {
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: Roboto, Arial;
+  width: 100%; /* Ensures the main container covers the full width */
+}
+
+.left-section {
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+.left-section h1 {
+  font-size: 35px;
+  margin: 10px;
+}
+
+ p{
+  font-size: 16px;
+  color: hsl(235, 18%, 26%);
+  margin: 10px;
+  line-height: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+.flex p {
+  margin-left: 18px;
+  margin-top: 0;
+}
+
+.secondHeader {
+  margin-top: 20px;
+}
+
+.secondHeader p {
+  font-size: 16px;
+}
+
+input {
+  border: 1px solid rgb(218, 216, 216);
+  color: rgb(218, 216, 216);
+  height: 50px;
+  width: 98%;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button {
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  padding: 15px 15px;
+  line-height: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all ease-in-out 0.15s;
+}
+
+button:hover{
+  background-image: linear-gradient(to  right,hsl(337, 97%, 63%),hsl(4, 100%, 67%));
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.15);
+}
+.title{
+  font-weight: bold;
+}
+.sec {
+  margin-bottom: 20px;
+}
+
+.attribution {
+  font-size: 18px;
+  text-align: center;
+  font-family: Roboto;
+  color: black;
+  margin-top: 10px;
+}
+
+.attribution a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.success-card{
+  font-family: Roboto;
+  padding: 20px;
+  margin-top: 15vh;
+}
+.secondHeader{
+  display: flex;
+  justify-content: space-between;
+}
+.success-card h1{
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: hsl(234, 29%, 20%);;
+}
+.success-card p{
+  font-size: 16px;
+  line-height: 24px;
+  color: hsl(234, 29%, 20%);;
+}
+.success-card button{
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  margin-top: 0px;
+  width: 90%;
+  font-size: 16px;
+  border: none;
+  padding: 15px 15px;
+  line-height: 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in-out 0.15s;
+}
+.success-card span{
+  font-weight: bold;
+}
+.p{
+  margin-bottom: 20px;
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+    line-height: 20px;
+}
+.fail {
+  visibility: hidden;
+}
+
+.failed {
+  border: 1px solid red;
+  width: 90%;
+  font-size: 16px;
+  color: red;
+  border-radius: 4px;
+    height: 50px;
+  width: 98%;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.fal {
+  visibility: visible;
+  color:  red;
+  font-weight: normal;
+}
+@media(min-width:900px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(234, 29%, 20%);
+  }
+  main{
+    display: grid;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+  font-family: Roboto, Arial;
+  width: 60%; /* Ensures the main container covers the full width */
+  height: auto;
+  max-height: 694px;
+  }
+  .left-section{
+    align-self: center;
+  }
+  .right-section {
+  height: 100%; /* Sets the height to 40% of the viewport height */
+  width: 100%; /* Ensures it covers the full width */
+  background-image: url(assets/images/illustration-sign-up-desktop.svg);
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-repeat: no-repeat;
+  background-position: center; /* Centers the background image */
+}
+.success-card h1{
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: hsl(234, 29%, 20%);;
+}
+.success-card p{
+  font-size: 16px;
+  line-height: 24px;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 20px;
+}
+.success-card button{
+  position: static;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  margin-top: 0px;
+  width: 90%;
+  font-size: 16px;
+  border: none;
+  padding: 15px 15px;
+  line-height: 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in-out 0.15s;
+}
+.success-card span{
+  font-weight: bold;
+}
+.success-card{
+  font-family: Roboto;
+  padding: 30px;
+  margin-top: 15vh;
+  background-color: white;
+  width: 28%;
+  border-radius: 8px;
+}
+.attribution {
+  font-size: 18px;
+  text-align: center;
+  font-family: Roboto;
+  color: white;
+  margin-top: 10px;
+}
+
+.attribution a {
+  color: white;
+  text-decoration: none;
+}
+
+}
