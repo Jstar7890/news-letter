@@ -183,12 +183,12 @@ button:hover{
   }
   main{
     display: grid;
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
     background-color: white;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 55% 45%;
   font-family: Roboto, Arial;
-  width: 60%; /* Ensures the main container covers the full width */
+  width: 45%; /* Ensures the main container covers the full width */
   height: auto;
   max-height: 694px;
   }
@@ -196,8 +196,10 @@ button:hover{
     align-self: center;
   }
   .right-section {
+    border-radius: 8px;
   height: 100%; /* Sets the height to 40% of the viewport height */
   width: 100%; /* Ensures it covers the full width */
+  object-fit: cover;
   background-image: url(assets/images/illustration-sign-up-desktop.svg);
   background-size: cover; /* Ensures the image covers the entire section */
   background-repeat: no-repeat;
