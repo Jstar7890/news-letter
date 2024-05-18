@@ -183,7 +183,7 @@ button:hover{
   }
   main{
     display: grid;
-    padding: 20px;
+    padding: 40px;
     border-radius: 20px;
     background-color: white;
     grid-template-columns: 1fr 1fr;
