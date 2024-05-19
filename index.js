@@ -1,7 +1,6 @@
 function validate(){
   const inputElement =  document.querySelector('.js-input');
 const inputValue = inputElement.value;
-console.log(inputValue)
 const buttonElement = document.querySelector('.js-submit-button');
 buttonElement.addEventListener('click',() => {
   const validEmail = /^[a-zA-Z0-9.+-_%]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -22,16 +21,18 @@ function dismiss(){
 function success (emailAddress){
   window.document.body.innerHTML += 
   `
+  <div class="out">
   <div class="success-card">
-<img src="assets/images/icon-success.svg" alt="">
-<h1>Thanks for subscribing!</h1>
-<p>
-  A confirmation email has been sent to <span>${emailAddress}</span>
-  Please open it and click the button inside to confirm your subscription.
-</p>
-<button class="dismiss" onclick="dismiss()">
-  Dismiss message
-</button>
-</div>
+  <img src="assets/images/icon-success.svg" alt="">
+  <h1>Thanks for subscribing!</h1>
+  <p>
+    A confirmation email has been sent to <span>${emailAddress}</span>
+    Please open it and click the button inside to confirm your subscription.
+  </p>
+  <button class="dismiss" onclick="dismiss()">
+    Dismiss message
+  </button>
+  </div>
+  </div>
   `
 }
