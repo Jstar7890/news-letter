@@ -2,14 +2,18 @@ body {
   padding: 0;
   margin: 0;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 .right-section {
-  height: 40vh; /* Sets the height to 40% of the viewport height */
-  width: 100%; /* Ensures it covers the full width */
   background-image: url(assets/images/illustration-sign-up-mobile.svg);
-  background-size: cover; /* Ensures the image covers the entire section */
-  background-repeat: no-repeat;
-  background-position: center; /* Centers the background image */
+height: 50vh;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 8px;
 }
 
 main {
@@ -26,7 +30,6 @@ main {
 
 .left-section h1 {
   font-size: 35px;
-  margin: 10px;
 }
 
  p{
@@ -172,50 +175,80 @@ button:hover{
   color:  red;
   font-weight: normal;
 }
-@media(min-width:900px) {
-  body{
+@media(min-width:690px) {
+  .outer{
     display: flex;
     flex-direction: column;
     height: 100vh;
     align-items: center;
     justify-content: center;
+    padding: 2.25em;
+  }
+  body{
     background-color: hsl(234, 29%, 20%);
   }
   main{
+    padding: 1.25rem;
     display: grid;
-    padding: 20px;
     border-radius: 20px;
     background-color: white;
     grid-template-columns: 55% 45%;
-  font-family: Roboto, Arial;
-  width: 45%; /* Ensures the main container covers the full width */
-  height: auto;
-  max-height: 694px;
+    font-family: Roboto, Arial;
+    max-width: 930px; /* Ensures the main container covers the full width */
+    height: 100%;
+    margin: 1.25em;
+  }
+  .p{
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .left-section{
+    justify-self: center;
     align-self: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .left-section h1{
+    font-size: 60px;
+    color: hsl(234, 29%, 20%);
   }
   .right-section {
     border-radius: 8px;
-  height: 100%; /* Sets the height to 40% of the viewport height */
-  width: 100%; /* Ensures it covers the full width */
-  object-fit: cover;
+  /* height: 100%; Sets the height to 40% of the viewport height */
   background-image: url(assets/images/illustration-sign-up-desktop.svg);
-  background-size: cover; /* Ensures the image covers the entire section */
-  background-repeat: no-repeat;
-  background-position: center; /* Centers the background image */
+   height: auto; 
+  border-radius: 10px;
+}
+.success-card{
+  align-self: center;
+  justify-self: center;
+  max-width: 400px;
+  height: auto;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.success-card img{
+  height: 80px;
 }
 .success-card h1{
-  font-size: 40px;
+  font-size: 45px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   color: hsl(234, 29%, 20%);;
 }
 .success-card p{
   font-size: 16px;
   line-height: 24px;
   color: hsl(234, 29%, 20%);
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+.p,p{
+  font-size: 20px;
+  line-height: 26px;
 }
 .success-card button{
   position: static;
@@ -239,17 +272,16 @@ button:hover{
 .success-card{
   font-family: Roboto;
   padding: 30px;
-  margin-top: 15vh;
   background-color: white;
-  width: 28%;
-  border-radius: 8px;
+  border-radius: 30px;
 }
 .attribution {
   font-size: 18px;
   text-align: center;
   font-family: Roboto;
   color: white;
-  margin-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .attribution a {

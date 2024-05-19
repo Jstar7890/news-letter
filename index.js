@@ -16,6 +16,9 @@ document.querySelector('.fail').classList.add('fal');
   }
 })
 }
+function dismiss(){
+    location.reload();
+}
 function success (emailAddress){
   window.document.body.innerHTML += 
   `
@@ -26,7 +29,7 @@ function success (emailAddress){
   A confirmation email has been sent to <span>${emailAddress}</span>
   Please open it and click the button inside to confirm your subscription.
 </p>
-<button class="dismiss">
+<button class="dismiss" onclick="dismiss()">
   Dismiss message
 </button>
 </div>
