@@ -29,11 +29,12 @@ main {
 }
 
 .left-section h1 {
-  font-size: 35px;
+  font-size: 38px;
+  margin-bottom:  10px;
 }
 
  p{
-  font-size: 16px;
+  font-size: 18px;
   color: hsl(235, 18%, 26%);
   margin: 10px;
   line-height: 20px;
@@ -54,7 +55,7 @@ main {
 }
 
 .secondHeader p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 input {
@@ -73,7 +74,7 @@ button {
   border: none;
   margin-top: 20px;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
   padding: 15px 15px;
   line-height: 24px;
@@ -174,6 +175,10 @@ button:hover{
   visibility: visible;
   color:  red;
   font-weight: normal;
+}
+.p{
+  font-size: 18px;
+  line-height: 26px;
 }
 @media(min-width:690px) {
   .outer{
